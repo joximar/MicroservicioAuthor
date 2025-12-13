@@ -1,0 +1,29 @@
+@host = http://localhost:8080
+
+GET {{host}}/products HTTP/1.1
+###
+
+GET {{host}}/products/2 HTTP/1.1
+###
+
+POST {{host}}/products HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Arroz Faraon",
+    "price": 6.00
+}
+###
+
+PATCH {{host}}/products/2 HTTP/1.1
+Content-Type: application/json
+
+{
+    "id": 2,
+    "name": "Galleta Soda",
+    "price": 1.50
+}
+###
+
+DELETE {{host}}/products/2 HTTP/1.1
+###
