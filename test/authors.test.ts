@@ -13,10 +13,10 @@ const main = async () => {
     try {
 
         ///crear
-        // const create = await firstValueFrom(client.send(
-        //     {cmd:'authors.create'},
-        //     {name: "Ricardo Palma", country:"Peru", isActive:true}));
-        // console.log("CREADO: ",create)
+        const create = await firstValueFrom(client.send(
+            {cmd:'authors.create'},
+            {name: "Ricardo Palma", country:"Peru", isActive:true}));
+        console.log("CREADO: ",create)
 
     //     //actualizar
         // const update = await firstValueFrom(client.send(
@@ -25,10 +25,10 @@ const main = async () => {
         // console.log("ACTUALIZADO: ",update)
 
     //    //eliminar
-        const delet = await firstValueFrom(client.send(
-            {cmd:'authors.delete'},
-            {id:8}));
-        console.log("ELIMINADO: ",delet)
+        // const delet = await firstValueFrom(client.send(
+        //     {cmd:'authors.delete'},
+        //     {id:8}));
+        // console.log("ELIMINADO: ",delet)
 
 
     //     //buscar
